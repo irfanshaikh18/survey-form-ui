@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Freak - Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="icon.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 id="title">FitnessFreak Survey Form</h1>
+        <p id="description">
+          <em>
+            Hello, FitnessFreak! Help us improve by filling out this short
+            survey.
+          </em>
+        </p>
+      </header>
+
+      <form id="survey-form" action="">
+        <div class="form-field">
+          
+          <!-- Client's Name -->
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            placeholder="Enter your name"
+            required
+            autofocus
+            spellcheck="false"
+          />
+        </div>
+
+        <!-- Client's Email -->
+        <div class="form-field">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter your Email"
+            required
+            spellcheck="false"
+          />
+        </div>
+
+        <!-- Client's Age -->
+        <div class="form-field">
+          <label for="number" id="number-label"
+            >Age <span class="hint">(optional)</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            class="form-input"
+            min="10"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+
+        <!-- Client's Membership Status -->
+        <div class="form-field">
+          <p>Which options best describes your membership status:</p>
+          <select
+            name="membership-status"
+            id="dropdown"
+            class="form-input"
+            required
+          >
+            <option value="" disabled selected value
+              >Select your membership status</option
+            >
+            <option value="new-member">Recently joined</option>
+            <option value="normal-member">Monthly member</option>
+            <option value="prime-member">Yealy member(Prime Member)</option>
+          </select>
+        </div>
+
+        <!-- Client's Feedback -->
+        <div class="form-field">
+          <p class="radio-checkbox-para">
+            How likely you will recommand FitnessFreak to your friend's?
+          </p>
+          <label for="definitely"
+            ><input
+              id="definitely"
+              class="input-radio"
+              type="radio"
+              name="recommandation"
+              value="definitely"
+              checked
+            />Definitely</label
+          >
+
+          <label for="maybe"
+            ><input
+              id="maybe"
+              class="input-radio"
+              type="radio"
+              name="recommandation"
+              value="maybe"
+            />May be</label
+          >
+
+          <label for="not-sure">
+            <input
+              id="not-sure"
+              class="input-radio"
+              type="radio"
+              name="recommandation"
+              value="notsure"
+            />Not sure</label
+          >
+        </div>
+
+
+        <!-- Client's Suggestions -->
+        <div class="form-field">
+          <p class="radio-checkbox-para">
+            What improvements do you wanna see in FitnessFreak?
+          </p>
+
+          <label for="">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="dumbblles-bars"
+            />
+            New dumblles and Bars</label
+          >
+          <label for="">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="cardio-machines"
+            />Modern Cardio Machines</label
+          >
+          <label for="">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="fitness-assistent"
+            />Fintess Assistent</label
+          >
+          <label for="">
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="nutrition-guide"
+            />Nutrition Guide</label
+          >
+          <label for="">
+            <input type="checkbox" class="input-checkbox" value="steam" />Steam
+            Service</label
+          >
+          <br />
+        </div>
+
+        <div class="form-field">
+          <p>Any other suggestions please specify?</p>
+          <textarea
+            name="suggestion"
+            id="user-suggesion"
+            placeholder="Enter your suggestion here..."
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
